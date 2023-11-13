@@ -33,7 +33,7 @@ export default function Footer() {
             {/* <!-- social - start --> */}
             <div className="flex gap-4">
               <a
-                href="#"
+                href="/"
                 target="_blank"
                 className="text-slate-100 transition duration-100 hover:text-coffeeAccent active:text-coffeeAccent"
               >
@@ -50,7 +50,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="#"
+                href="/"
                 target="_blank"
                 className="text-slate-100 transition duration-100 hover:text-coffeeAccent active:text-coffeeAccent"
               >
@@ -80,7 +80,7 @@ export default function Footer() {
             <nav className="flex flex-col gap-4">
               <div>
                 <a
-                  href="#"
+                  href="/"
                   className="text-slate-300 transition duration-100 hover:text-coffeeAccent hover:text-coffeeAccent"
                 >
                   Impressum
@@ -89,7 +89,7 @@ export default function Footer() {
 
               <div>
                 <a
-                  href="#"
+                  href="/"
                   className="text-gray-300 transition duration-100 hover:text-coffeeAccent hover:text-coffeeAccent"
                 >
                   Jobs
@@ -98,7 +98,7 @@ export default function Footer() {
 
               <div>
                 <a
-                  href="#"
+                  href="/"
                   className="text-gray-300 transition duration-100 hover:text-coffeeAccent hover:text-coffeeAccent"
                 >
                   Blog
@@ -116,7 +116,7 @@ export default function Footer() {
 
             <nav className="flex flex-col gap-4">
               <div>
-                <spam href="#" className="text-gray-300">
+                <span className="text-gray-300">
                   <span className="font-bold"> Benjamin Stoltenberg</span>
                   <br />
                   Telefon: +49 174 607 92 73 <br />
@@ -127,12 +127,12 @@ export default function Footer() {
                   >
                     info@coffee-bike-hamburg.de
                   </a>
-                </spam>
+                </span>
               </div>
 
               <div>
                 <a
-                  href="#"
+                  href="/"
                   className="text-gray-300 transition duration-100 hover:text-coffeeAccent hover:text-coffeeAccent"
                 >
                   Häufige Fragen / FAQ
@@ -151,7 +151,7 @@ export default function Footer() {
             <nav className="flex flex-col gap-4">
               <div>
                 <a
-                  href="#"
+                  href="/"
                   className="text-gray-300 transition duration-100 hover:text-coffeeAccent hover:text-coffeeAccent"
                 >
                   AGB
@@ -160,7 +160,7 @@ export default function Footer() {
 
               <div>
                 <a
-                  href="#"
+                  href="/"
                   className="text-gray-300 transition duration-100 hover:text-coffeeAccent hover:text-coffeeAccent"
                 >
                   Datenschutz
