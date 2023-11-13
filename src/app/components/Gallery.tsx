@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Gallery() {
   return (
     <div className="bg-coffeePrimary py-6 sm:py-8 lg:py-12">
@@ -22,7 +23,7 @@ export default function Gallery() {
             href="#"
             className="group relative flex h-48 items-end justify-end overflow-hidden rounded-lg  shadow-lg md:h-96"
           >
-            <img
+            <Image
               src="https://images.pexels.com/photos/302892/pexels-photo-302892.jpeg?auto=compress&cs=tinysrgb&w=1600"
               loading="lazy"
               alt="Coffee"
@@ -42,7 +43,7 @@ export default function Gallery() {
             href="#"
             className="group relative flex h-48 items-end justify-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-96"
           >
-            <img
+            <Image
               src="https://images.pexels.com/photos/324028/pexels-photo-324028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               loading="lazy"
               alt="Photo by Lorenzo Herrera"
@@ -62,7 +63,7 @@ export default function Gallery() {
             href="#"
             className="group relative flex h-48 items-end justify-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-96"
           >
-            <img
+            <Image
               src="https://images.pexels.com/photos/302897/pexels-photo-302897.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               loading="lazy"
               alt="Photo by Magicle"
