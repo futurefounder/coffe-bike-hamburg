@@ -51,7 +51,7 @@ export default function Navigation() {
       {/* <!-- buttons - start --> */}
       <a
         href="#"
-        className="mr-6 hidden rounded-lg bg-coffeeAccent px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-coffeeAccent hover:text-black focus-visible:ring active:text-black md:text-base lg:inline-block"
+        className="mr-6 hidden rounded uppercase bg-coffeeAccent px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-coffeeAccent hover:text-black focus-visible:ring active:text-black md:text-base lg:inline-block"
       >
         Jetzt Anfragen
       </a>
