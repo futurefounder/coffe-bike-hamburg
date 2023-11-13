@@ -1,3 +1,8 @@
 export default function Benefits() {
-  return <> Benefits</>;
+  return (
+    <>
+      {" "}
+      Benefits <br />
+    </>
+  );
 }

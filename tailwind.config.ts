@@ -12,6 +12,7 @@ const config: Config = {
         coffeePrimary: "#2e1610",
         coffeeSecondary: "#492c25",
         coffeeAccent: "#ff8200",
+        coffeeAccentDark: "#8f4a00",
         coffeeNeutral: "#d3c9c5",
       },
     },
