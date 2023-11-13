@@ -20,26 +20,7 @@ export default function Hero() {
           />{" "}
           Your browser does not support the video tag.
         </video>
-        <section className="flex flex-col items-center">
-          {/* <!-- notice - start --> */}
-          <div className="flex items-center gap-2 rounded border bg-gray-50 p-2 text-gray-500">
-            <span className="mt-0.5 rounded-full bg-indigo-100 px-2 py-1 text-xs font-semibold leading-none text-indigo-800">
-              New
-            </span>
-
-            <span className="text-sm">
-              This is a section of some simple filler text.
-            </span>
-
-            <a
-              href="#"
-              className="text-sm font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700"
-            >
-              More
-            </a>
-          </div>
-          {/* <!-- notice - end --> */}
-        </section>{" "}
+        <section className="flex flex-col items-center"></section>{" "}
         <div className="absolute bottom-72 left-0 right-0 flex flex-col justify-center items-center pb-4">
           <p className="text-slate-100 mb-12 tracking-wide font-base md:text-base uppercase text-center">
             Coffee Bike Hamburg

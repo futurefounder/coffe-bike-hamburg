@@ -8,12 +8,6 @@ export default function Gallery() {
           <h2 className="mb-4 text-center text-2xl font-bold text-white md:mb-6 lg:text-3xl">
             Momentaufnahmen
           </h2>
-
-          <p className="mx-auto max-w-screen-md text-center text-white md:text-lg">
-            This is a section of some simple filler text, also known as
-            placeholder text. It shares some characteristics of a real written
-            text but is random or otherwise generated.
-          </p>
         </div>
         {/* text - end  */}
 
@@ -24,7 +18,9 @@ export default function Gallery() {
             className="group relative flex h-48 items-end justify-end overflow-hidden rounded-lg  shadow-lg md:h-96"
           >
             <Image
-              src="https://images.pexels.com/photos/302892/pexels-photo-302892.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              height={300}
+              width={300}
+              src="/img/coffee-bike-hamburg-coffee.webp"
               loading="lazy"
               alt="Coffee"
               className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
@@ -44,7 +40,9 @@ export default function Gallery() {
             className="group relative flex h-48 items-end justify-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-96"
           >
             <Image
-              src="https://images.pexels.com/photos/324028/pexels-photo-324028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              height={300}
+              width={300}
+              src="/img/coffee-bike-hamburg-coffee-2.webp"
               loading="lazy"
               alt="Photo by Lorenzo Herrera"
               className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
@@ -64,7 +62,9 @@ export default function Gallery() {
             className="group relative flex h-48 items-end justify-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-96"
           >
             <Image
-              src="https://images.pexels.com/photos/302897/pexels-photo-302897.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              width={300}
+              height={300}
+              src="/img/coffee-bike-hamburg-coffee-3.webp"
               loading="lazy"
               alt="Photo by Magicle"
               className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"

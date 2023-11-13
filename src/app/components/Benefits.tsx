@@ -12,12 +12,6 @@ export default function Benefits() {
           <h2 className="mb-4 text-center uppercase text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
             Das Kaffee Catering der besonderen Art
           </h2>
-
-          <p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
-            This is a section of some simple filler text, also known as
-            placeholder text. It shares some characteristics of a real written
-            text but is random or otherwise generated.
-          </p>
         </div>
         {/* text - end  */}
 
@@ -81,7 +75,7 @@ export default function Benefits() {
           </div>
           {/* feature - end  */}
         </div>
-      </div>
+      </div>{" "}
     </div>
   );
 }
