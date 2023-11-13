@@ -1,8 +1,9 @@
 export default function Benefits() {
   return (
     <>
-      {" "}
-      Benefits <br />
+      <div className="bg-green-200">
+        Benefits <br />
+      </div>
     </>
   );
 }
