@@ -23,11 +23,10 @@ export default function Hero() {
         <section className="flex flex-col items-center"></section>{" "}
         <div className="absolute bottom-72 left-0 right-0 flex flex-col justify-center items-center pb-4">
           <p className="text-slate-100 mb-12 tracking-wide font-base md:text-base uppercase text-center">
-            Coffee Bike Hamburg
+            Kaffee Bike Hamburg
           </p>
-          <p className="text-white font-sans mb-10 tracking-wide font-extrabold md:text-4xl uppercase text-center">
-            Kaffee-Genuss <br />
-            mobil gemacht
+          <p className="text-white font-sans mb-10 tracking-wide font-extrabold md:text-4xl text-center">
+            Ihr mobiler Kaffee-Partner <br /> in Hamburg
           </p>
           <a
             href="#"

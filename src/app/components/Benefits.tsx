@@ -9,8 +9,8 @@ export default function Benefits() {
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
         {/* text - start  */}
         <div className="mb-10 md:mb-16">
-          <h2 className="mb-4 text-center uppercase text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
-            Das Kaffee Catering der besonderen Art
+          <h2 className="mb-4 text-center font-bold tracking-tight leading-tight uppercase text-3xl font-extrabold text-gray-800 md:mb-6 lg:text-3xl">
+            Ihr Kaffee
           </h2>
         </div>
         {/* text - end  */}
@@ -57,9 +57,9 @@ export default function Benefits() {
                 stroke="currentColor"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
                 />
               </svg>

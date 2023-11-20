@@ -35,3 +35,12 @@ body {
     min-height: 40px;
   }
 }
+
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}
+.header {
+  transition: background-color 0.3s ease;
+}

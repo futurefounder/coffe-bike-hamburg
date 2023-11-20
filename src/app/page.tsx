@@ -1,21 +1,20 @@
-import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";
 import Benefits from "./components/Benefits";
 import Gallery from "./components/Gallery";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
+import LogoCloud from "./components/LogoCloud";
 
 export default function Home() {
   return (
     <>
-      {" "}
       <div className="flex flex-col min-h-screen">
         <main className="flex-grow">
-          {/* <Navigation /> */}
           <Hero />
+          <LogoCloud />
           <Benefits />
           <Gallery />
-          <FAQ />{" "}
+          <FAQ />
         </main>
         <Footer />
       </div>
