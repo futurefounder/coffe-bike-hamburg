@@ -6,7 +6,7 @@ export default function Gallery() {
         {/* text - start  */}
         <div className="mb-10 md:mb-16">
           <h2 className="mb-4 text-center uppercase text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
-            Momentaufnahmen
+            Eindrücke
           </h2>
         </div>
         {/* text - end  */}

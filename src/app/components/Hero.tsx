@@ -25,21 +25,19 @@ export default function Hero() {
           <p className="text-slate-100 mb-12 tracking-wide font-base md:text-base uppercase text-center">
             Kaffee Bike Hamburg
           </p>
-          <p className="text-white font-sans mb-10 tracking-wide font-extrabold md:text-4xl text-center">
-            Ihr mobiler Kaffee-Partner <br /> in Hamburg
+          <p className="text-white font-sans mb-16 tracking-wide font-extrabold md:text-4xl text-center">
+            Ihr mobiler Kaffee-Partner
           </p>
+
           <a
-            href="#"
-            style={{ boxShadow: "0 0 10px #fff" }}
-            onMouseOver={(e) =>
-              (e.currentTarget.style.boxShadow = "0 0 30px #fff")
-            } // Bigger glow on hover
-            onMouseOut={(e) =>
-              (e.currentTarget.style.boxShadow = "0 0 10px #fff")
-            } // Original size on mouse out
-            className="mt-4 rounded bg-coffeeAccent px-8 py-3 text-center text-sm font-semibold text-white outline-none border-white border-2 shadow-lg transition duration-100 hover:bg-coffeeAccentDark hover:text-white focus-visible:ring active:text-black md:text-2xl"
+            href="#_"
+            className="relative px-6 py-3 font-bold text-black group"
           >
-            Jetzt Anfragen
+            <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-coffeeAccent group-hover:translate-x-0 group-hover:translate-y-0"></span>
+            <span className="absolute inset-0 w-full h-full border-4 border-white group-hover:border-black"></span>
+            <span className="relative text-3xl text-white group-hover:text-black">
+              Jetzt Anfragen
+            </span>
           </a>
         </div>
       </header>

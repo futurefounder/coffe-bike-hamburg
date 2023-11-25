@@ -19,7 +19,7 @@ export default function Navigation() {
         >
           <path d="M96 0V47L48 94H0V47L48 0H96Z" />
         </svg>
-        Coffee Bike Hamburg
+        Kaffee Bike Hamburg
       </a>
       {/* <!-- logo - end --> */}
 

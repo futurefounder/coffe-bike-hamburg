@@ -21,7 +21,7 @@ export default function Footer() {
                 >
                   <path d="M96 0V47L48 94H0V47L48 0H96Z" />
                 </svg>
-                Coffee Bike Hamburg
+                Kaffee Bike Hamburg
               </a>
             </div>
             {/* <!-- logo - end --> */}
@@ -74,7 +74,7 @@ export default function Footer() {
           {/* <!-- nav - start --> */}
           <div>
             <div className="mb-4 font-bold uppercase tracking-widest text-slate-100">
-              Über Coffee Bike Hamburg
+              Über Kaffee Bike Hamburg
             </div>
 
             <nav className="flex flex-col gap-4">
