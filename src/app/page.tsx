@@ -4,8 +4,9 @@ import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import LogoCloud from "./components/LogoCloud";
 import Intro from "./components/Intro";
-import Anfragen from "./components/Anfragen";
 import Gallery from "./components/Gallery";
+import Form from "./components/Form";
+import CTA from "./components/CTA";
 
 export default function Home() {
   return (
@@ -13,10 +14,11 @@ export default function Home() {
       <div className="flex flex-col min-h-screen">
         <main className="flex-grow">
           <Hero />
-          <Intro />
           <LogoCloud />
+          <Intro />
           <Benefits />
-          <Anfragen />
+          <CTA />
+          <Form />
           <Gallery />
           <FAQ />
         </main>

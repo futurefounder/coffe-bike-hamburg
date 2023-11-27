@@ -6,7 +6,7 @@ export default function Benefits() {
     offscreen: { opacity: 0 },
     onscreen: {
       opacity: 1,
-      transition: { duration: 2 },
+      transition: { duration: 3 },
     },
   };
 
@@ -57,7 +57,7 @@ export default function Benefits() {
               >
                 <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-coffeeAccent group-hover:translate-x-0 group-hover:translate-y-0"></span>
                 <span className="absolute inset-0 w-full h-full border-4 border-black group-hover:border-black"></span>
-                <span className="relative text-base text-black hover:text-black">
+                <span className="relative text-base text-black group-hover:text-white">
                   Jetzt Anfragen
                 </span>
               </a>
@@ -92,9 +92,9 @@ export default function Benefits() {
                 href="#_"
                 className="relative px-6 py-3 font-bold text-black group"
               >
-                <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-coffeeAccent group-hover:translate-x-0 group-hover:translate-y-0"></span>
+                <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-coffeeAccent group-hover:translate-x-0 group-hover:translate-y-0 "></span>
                 <span className="absolute inset-0 w-full h-full border-4 border-black group-hover:border-black"></span>
-                <span className="relative text-base text-black hover:text-black">
+                <span className="relative text-base text-black group-hover:text-white">
                   Jetzt Anfragen
                 </span>
               </a>
@@ -103,11 +103,18 @@ export default function Benefits() {
 
           <div className="relative z-10 lg:py-16">
             <div className="relative h-64 sm:h-80 lg:h-full">
-              <img
-                alt="House"
-                src="https://images.pexels.com/photos/59884/pexels-photo-59884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                className="absolute inset-0 h-full w-full object-cover"
-              />
+              <motion.div
+                initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ once: true, amount: 0.8 }}
+                variants={variants}
+              >
+                <img
+                  alt="House"
+                  src="https://images.pexels.com/photos/59884/pexels-photo-59884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+              </motion.div>
             </div>
           </div>
         </div>

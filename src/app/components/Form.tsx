@@ -1,4 +1,4 @@
-export default function Anfragen() {
+export default function Form() {
   return (
     <div className="bg-white py-6 sm:py-8 lg:py-12">
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
@@ -15,48 +15,21 @@ export default function Anfragen() {
         </div>
 
         <form className="mx-auto grid max-w-screen-md gap-4 sm:grid-cols-2">
-          <div>
-            <label
-              for="first-name"
-              className="mb-2 inline-block text-sm text-gray-800 sm:text-base"
-            >
-              Vorname*
-            </label>
-            <input
-              name="first-name"
-              className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring"
-            />
-          </div>
-
-          <div>
-            <label
-              for="last-name"
-              className="mb-2 inline-block text-sm text-gray-800 sm:text-base"
-            >
-              Nachname*
-            </label>
-            <input
-              name="last-name"
-              className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring"
-            />
-          </div>
-
           <div className="sm:col-span-2">
             <label
-              for="company"
+              htmlFor="first-last-name"
               className="mb-2 inline-block text-sm text-gray-800 sm:text-base"
             >
-              Firma (optional)
+              Vor- und Nachname*
             </label>
             <input
               name="company"
               className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring"
             />
           </div>
-
           <div className="sm:col-span-2">
             <label
-              for="email"
+              htmlFor="email"
               className="mb-2 inline-block text-sm text-gray-800 sm:text-base"
             >
               Email*
@@ -69,10 +42,10 @@ export default function Anfragen() {
 
           <div className="sm:col-span-2">
             <label
-              for="subject"
+              htmlFor="phone"
               className="mb-2 inline-block text-sm text-gray-800 sm:text-base"
             >
-              Betreff*
+              Telefonnummer (optional)
             </label>
             <input
               name="subject"
@@ -82,7 +55,7 @@ export default function Anfragen() {
 
           <div className="sm:col-span-2">
             <label
-              for="message"
+              htmlFor="message"
               className="mb-2 inline-block text-sm text-gray-800 sm:text-base"
             >
               Nachricht*

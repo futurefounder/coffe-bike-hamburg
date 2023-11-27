@@ -26,15 +26,14 @@ export default function Hero() {
             Kaffee Bike Hamburg
           </p>
           <p className="text-white font-sans mb-16 tracking-wide font-extrabold md:text-4xl text-center">
-            Ihr mobiler Kaffee-Partner
-          </p>
-
+            Ihr Kaffee-Catering im Nordern
+          </p>{" "}
           <a
             href="#_"
             className="relative px-6 py-3 font-bold text-black group"
           >
             <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-coffeeAccent group-hover:translate-x-0 group-hover:translate-y-0"></span>
-            <span className="absolute inset-0 w-full h-full border-4 border-white group-hover:border-black"></span>
+            <span className="absolute inset-0 w-full h-full border-4 border-white group-hover:"></span>
             <span className="relative text-3xl text-white group-hover:text-black">
               Jetzt Anfragen
             </span>
