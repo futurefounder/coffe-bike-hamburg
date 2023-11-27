@@ -6,7 +6,7 @@ export default function FAQ() {
   // Array of states for each FAQ item
   const [openStates, setOpenStates] = useState(Array(4).fill(false));
 
-  const toggleFAQ = (index) => {
+  const toggleFAQ = (index: number) => {
     let updatedStates = [...openStates];
     updatedStates[index] = !updatedStates[index];
     setOpenStates(updatedStates);
