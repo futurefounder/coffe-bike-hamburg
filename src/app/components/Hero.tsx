@@ -7,7 +7,7 @@ export default function Hero() {
     <>
       <header className="relative mb-12 overflow-hidden h-screen ">
         {/* Navigation Component */}
-        <Navigation />
+        {/* <Navigation /> */}
         <video
           autoPlay
           loop

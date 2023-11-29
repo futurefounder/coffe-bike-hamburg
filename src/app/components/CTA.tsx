@@ -16,7 +16,7 @@ export default function CTA() {
 
           <div className="flex w-full flex-col p-4 sm:w-1/2 sm:p-8 lg:w-3/5">
             <h2 className="mb-4 text-xl font-bold text-white uppercase md:text-2xl lg:text-4xl">
-              Sollen wir kurz sprechen?
+              Kurz sprechen?
             </h2>
 
             <p className="mb-8 max-w-md text-white">

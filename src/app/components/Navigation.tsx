@@ -1,8 +1,31 @@
+"use client";
+import { useEffect } from "react";
+
 export default function Navigation() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const nav = document.getElementById("nav");
+      if (scrollPosition > window.innerHeight * 0.1) {
+        nav.classList.add("bg-black");
+      } else {
+        nav.classList.remove("bg-black");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     // <div className="mx-auto max-w-screen-xs px-4 md:px-8 z-99">
 
-    <header className="absolute top-0 w-full z-20 flex justify-between items-center py-4 md:py-8">
+    <header
+      id="nav"
+      className="fixed top-0 w-full transition-colors duration-1000 z-20 flex justify-between items-center py-4 md:py-8 "
+    >
       {/* <!-- logo - start --> */}
       <a
         href="/"
