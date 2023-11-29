@@ -4,12 +4,14 @@ import { useEffect } from "react";
 export default function Navigation() {
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY;
       const nav = document.getElementById("nav");
-      if (scrollPosition > window.innerHeight * 0.1) {
-        nav.classList.add("bg-black");
-      } else {
-        nav.classList.remove("bg-black");
+      if (nav) {
+        const scrollPosition = window.scrollY;
+        if (scrollPosition > window.innerHeight * 0.1) {
+          nav.classList.add("bg-black");
+        } else {
+          nav.classList.remove("bg-black");
+        }
       }
     };
 
