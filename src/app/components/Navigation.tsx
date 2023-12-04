@@ -1,32 +1,37 @@
 "use client";
 import { useEffect } from "react";
 
-export default function Navigation() {
+export default function Navigation({ bgClass, shouldChangeOnScroll }) {
   useEffect(() => {
     const handleScroll = () => {
+      if (!shouldChangeOnScroll) return;
+
       const nav = document.getElementById("nav");
       if (nav) {
         const scrollPosition = window.scrollY;
         if (scrollPosition > window.innerHeight * 0.1) {
-          nav.classList.add("bg-black");
+          nav.classList.add("bg-coffeePrimary");
         } else {
-          nav.classList.remove("bg-black");
+          nav.classList.remove("bg-coffeePrimary");
         }
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    if (shouldChangeOnScroll) {
+      window.addEventListener("scroll", handleScroll);
+    }
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      if (shouldChangeOnScroll) {
+        window.removeEventListener("scroll", handleScroll);
+      }
     };
-  }, []);
-  return (
-    // <div className="mx-auto max-w-screen-xs px-4 md:px-8 z-99">
+  }, [shouldChangeOnScroll]);
 
+  return (
     <header
       id="nav"
-      className="fixed top-0 w-full transition-colors duration-1000 z-20 flex justify-between items-center py-4 md:py-8 "
+      className={`fixed top-0 w-full transition-colors duration-1000 z-20 flex justify-between items-center py-4 md:py-8 ${bgClass}`}
     >
       {/* <!-- logo - start --> */}
       <a
@@ -63,26 +68,20 @@ export default function Navigation() {
 
       {/* <!-- nav - start --> */}
       <nav className="hidden gap-12 lg:flex ">
-        <a href="#" className="text-lg font-semibold text-coffeeAccent">
+        <a href="/" className="text-lg font-semibold text-coffeeAccent">
           Home
         </a>
         <a
-          href="#"
-          className="text-lg font-semibold text-white transition duration-100 hover:text-coffeeAccent active:text-coffeeAccentDark"
-        >
-          Events
-        </a>
-        <a
-          href="#"
+          href="#benefits"
           className="text-lg font-semibold text-white transition duration-100 hover:text-coffeeAccent active:text-coffeeAccentDark"
         >
           Über uns
         </a>
         <a
-          href="#"
+          href="#anfragen"
           className="text-lg font-semibold text-white transition duration-100 hover:text-coffeeAccent active:text-coffeeAccentDark"
         >
-          Gallery
+          Anfragen
         </a>
       </nav>
       {/* <!-- nav - end --> */}
