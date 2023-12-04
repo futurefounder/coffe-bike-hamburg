@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function Benefits() {
@@ -22,6 +23,7 @@ export default function Benefits() {
                 viewport={{ once: true, amount: 0.8 }}
                 variants={variants}
               >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   alt="House"
                   src="https://images.pexels.com/photos/1071883/pexels-photo-1071883.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -51,8 +53,8 @@ export default function Benefits() {
                 schaffen Sie bleibende Erinnerungen.
               </p>
 
-              <a
-                href="#_"
+              <Link
+                href="#anfragen"
                 className="relative px-6 py-3 font-bold text-black group"
               >
                 <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-coffeeAccent group-hover:translate-x-0 group-hover:translate-y-0"></span>
@@ -60,7 +62,7 @@ export default function Benefits() {
                 <span className="relative text-base text-black group-hover:text-white">
                   Jetzt Anfragen
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -88,8 +90,8 @@ export default function Benefits() {
                 machen und bleibende Eindrücke bei allen Beteiligten zu
                 hinterlassen.
               </p>
-              <a
-                href="#_"
+              <Link
+                href="#anfragen"
                 className="relative px-6 py-3 font-bold text-black group"
               >
                 <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-coffeeAccent group-hover:translate-x-0 group-hover:translate-y-0 "></span>
@@ -97,7 +99,7 @@ export default function Benefits() {
                 <span className="relative text-base text-black group-hover:text-white">
                   Jetzt Anfragen
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -109,6 +111,7 @@ export default function Benefits() {
                 viewport={{ once: true, amount: 0.8 }}
                 variants={variants}
               >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   alt="House"
                   src="https://images.pexels.com/photos/59884/pexels-photo-59884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"

@@ -1,6 +1,8 @@
-// create a CTA component
+type CTAProps = {
+  headlineCTA: string;
+};
 
-export default function CTA() {
+export default function CTA({ headlineCTA }: CTAProps) {
   return (
     <div className="bg-white py-6 sm:py-8 lg:py-12">
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
@@ -16,7 +18,7 @@ export default function CTA() {
 
           <div className="flex w-full flex-col p-4 sm:w-1/2 sm:p-8 lg:w-3/5">
             <h2 className="mb-4 text-xl font-bold text-white uppercase md:text-2xl lg:text-4xl">
-              Kurz sprechen?
+              {headlineCTA}
             </h2>
 
             <p className="mb-8 max-w-md text-white">
@@ -28,7 +30,7 @@ export default function CTA() {
               Wir freuen uns auf Sie!
             </p>
 
-            <div className="mt-auto">
+            <div id="anfragen" className="mt-auto">
               <a
                 href="#"
                 className="inline-block bg-white px-8 py-3 text-center text-sm font-semibold text-black outline-none transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:text-base"

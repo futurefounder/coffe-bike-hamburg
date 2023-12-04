@@ -9,7 +9,11 @@ export default function FAQ() {
   const toggleFAQ = (index: number) => {
     let updatedStates = [...openStates];
     updatedStates[index] = !updatedStates[index];
-    setOpenStates(updatedStates);
+    setOpenStates((currentStates) => {
+      const updatedStates = [...currentStates];
+      updatedStates[index] = !updatedStates[index];
+      return updatedStates;
+    });
   };
 
   return (
@@ -79,15 +83,19 @@ export default function FAQ() {
 
           {/* <!-- question - start --> */}
           <div className="border-b">
-            <div className="flex cursor-pointer justify-between gap-2 py-4 text-black hover:text-coffeeAccent active:text-indigo-600">
-              <span
-                onClick={() => toggleFAQ(1)}
-                className="font-semibold transition duration-100 md:text-lg"
-              >
+            <div
+              onClick={() => toggleFAQ(1)}
+              className="flex cursor-pointer justify-between gap-2 py-4 text-black hover:text-coffeeAccent active:text-indigo-600"
+            >
+              <span className="font-semibold transition duration-100 md:text-lg">
                 Welche Kaffeevariationen bietet Ihr Service an?
               </span>
 
-              <span className="text-coffeeAccent">
+              <span
+                className={`text-coffeeAccent duration-500 transition-transform ${
+                  openStates[1] ? "rotate-180" : "rotate-0"
+                }`}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6"
@@ -119,12 +127,19 @@ export default function FAQ() {
 
           {/* <!-- question - start --> */}
           <div className="border-b">
-            <div className="flex cursor-pointer justify-between gap-2 py-4 text-black hover:text-coffeeAccent active:text-indigo-600">
+            <div
+              onClick={() => toggleFAQ(2)}
+              className="flex cursor-pointer justify-between gap-2 py-4 text-black hover:text-coffeeAccent active:text-indigo-600"
+            >
               <span className="font-semibold transition duration-100 md:text-lg">
                 Wie weit im Voraus muss ich den Service buchen?
               </span>
 
-              <span className="text-coffeeAccent">
+              <span
+                className={`text-coffeeAccent duration-500 transition-transform ${
+                  openStates[2] ? "rotate-180" : "rotate-0"
+                }`}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6"
@@ -142,44 +157,14 @@ export default function FAQ() {
               </span>
             </div>
 
-            <p className="mb-4 hidden text-gray-500">
+            <p
+              className={`mb-4 text-gray-500 transition-all duration-900 ease-in-out ${
+                openStates[2] ? "block" : "hidden"
+              }`}
+            >
               Wir empfehlen, unseren Service mindestens vier Wochen im Voraus zu
               buchen, um Ihren Wunschtermin sicherzustellen. Bei kurzfristigen
               Anfragen bemühen wir uns, eine passende Lösung zu finden.
-            </p>
-          </div>
-          {/* <!-- question - end --> */}
-
-          {/* <!-- question - start --> */}
-          <div className="border-b">
-            <div className="flex cursor-pointer justify-between gap-2 py-4 text-black hover:text-coffeeAccent active:text-indigo-600">
-              <span className="font-semibold transition duration-100 md:text-lg">
-                Is support available?
-              </span>
-
-              <span className="rotate-180 text-coffeeAccent">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </span>
-            </div>
-
-            <p className="mb-4 hidden text-gray-500">
-              This is a section of some simple filler text, also known as
-              placeholder text. It shares some characteristics of a real written
-              text but is random or otherwise generated. It may be used to
-              display a sample of fonts or generate text for testing.
             </p>
           </div>
           {/* <!-- question - end --> */}
