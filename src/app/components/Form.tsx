@@ -25,14 +25,11 @@ export default function Form() {
     setShowModal(true);
   };
 
-  // Disable form fields if already submitted
-  const disableFields = submitted ? "opacity-70 cursor-not-allowed" : "";
-
   const closeModal = () => {
     setShowModal(false);
   };
 
-  function getFieldClassNames(isSubmitted) {
+  function getFieldClassNames(isSubmitted: boolean) {
     return `w-full rounded border px-3 py-2 text-gray-800 outline-none transition duration-100 focus:ring ${
       isSubmitted
         ? "bg-gray-300 text-gray-500 cursor-not-allowed border-gray-200"
