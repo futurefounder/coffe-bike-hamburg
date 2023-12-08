@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useFormspark } from "@formspark/use-formspark";
 import Link from "next/link";
 
-const FORMSPARK_FORM_ID = "x2A96DsK";
+const FORMSPARK_FORM_ID = "D4h1P6YvE";
 
 export default function Form() {
   const [submit, submitting] = useFormspark({
@@ -31,6 +31,14 @@ export default function Form() {
   const closeModal = () => {
     setShowModal(false);
   };
+
+  function getFieldClassNames(isSubmitted) {
+    return `w-full rounded border px-3 py-2 text-gray-800 outline-none transition duration-100 focus:ring ${
+      isSubmitted
+        ? "bg-gray-300 text-gray-500 cursor-not-allowed border-gray-200"
+        : "bg-gray-50 ring-coffeeAccent"
+    }`;
+  }
 
   return (
     <div className="bg-white py-6 sm:py-8 lg:py-12">
@@ -86,11 +94,8 @@ export default function Form() {
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className={`${
-                disableFields
-                  ? "bg-gray-300 opacity-70 cursor-not-allowed w-full rounded border px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-coffeeAccent dark:focus:border-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                  : "w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-coffeeAccent transition duration-100 focus:ring"
-              } ${disableFields}`}
+              disabled={submitted}
+              className={getFieldClassNames(submitted)}
             />
           </div>
           <div className="sm:col-span-2">
@@ -106,11 +111,8 @@ export default function Form() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className={`${
-                disableFields
-                  ? "bg-gray-300 opacity-70 cursor-not-allowed w-full rounded border px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-coffeeAccent dark:focus:border-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                  : "w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-coffeeAccent transition duration-100 focus:ring"
-              } ${disableFields}`}
+              disabled={submitted}
+              className={getFieldClassNames(submitted)}
             />
           </div>
 
@@ -126,11 +128,8 @@ export default function Form() {
               type="text"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              className={`${
-                disableFields
-                  ? "bg-gray-300 opacity-70 cursor-not-allowed w-full rounded border px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-coffeeAccent dark:focus:border-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                  : "w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-coffeeAccent transition duration-100 focus:ring"
-              } ${disableFields}`}
+              disabled={submitted}
+              className={getFieldClassNames(submitted)}
             />
           </div>
 
@@ -147,11 +146,8 @@ export default function Form() {
               type="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className={`${
-                disableFields
-                  ? "bg-gray-300 opacity-70 cursor-not-allowed w-full rounded border px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-coffeeAccent dark:focus:border-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                  : "w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-coffeeAccent transition duration-100 focus:ring"
-              } ${disableFields}`}
+              disabled={submitted}
+              className={getFieldClassNames(submitted)}
             ></textarea>
           </div>
 

@@ -32,7 +32,7 @@ export default function CTA({ headlineCTA }: CTAProps) {
 
             <div id="anfragen" className="mt-auto">
               <a
-                href="#"
+                href="tel:+491746079273"
                 className="inline-block bg-white px-8 py-3 text-center text-sm font-semibold text-black outline-none transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:text-base"
               >
                 Telefon: 0174/6079273

@@ -7,7 +7,7 @@ export default function Benefits() {
     offscreen: { opacity: 0 },
     onscreen: {
       opacity: 1,
-      transition: { duration: 3 },
+      transition: { duration: 4 },
     },
   };
 
