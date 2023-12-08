@@ -1,7 +1,14 @@
 "use client";
 import { useEffect } from "react";
 
-export default function Navigation({ bgClass, shouldChangeOnScroll }) {
+type NavigationProps = {
+  bgClass: string; // Assuming bgClass is a string
+  shouldChangeOnScroll: boolean; // Assuming shouldChangeOnScroll is a boolean
+};
+export default function Navigation({
+  bgClass,
+  shouldChangeOnScroll,
+}: NavigationProps) {
   useEffect(() => {
     const handleScroll = () => {
       if (!shouldChangeOnScroll) return;

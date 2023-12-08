@@ -140,7 +140,6 @@ export default function Form() {
             <textarea
               required
               name="message"
-              type="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               disabled={submitted}
